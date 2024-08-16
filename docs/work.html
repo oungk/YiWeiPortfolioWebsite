@@ -10,7 +10,7 @@
     <title onclick="location.href='index.html';">Yi Wei Portfolio Website</title>
 
     <!-- favicon -->
-    <link rel="SHORTCUT ICON" href="https://iili.io/JR7idas.png">
+    <!--<link rel="SHORTCUT ICON" href="#"> -->
 
     <!-- CSS stylesheets -->
     <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
@@ -95,37 +95,60 @@
     </nav>
 
     <!-- main body -->
-    <main class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8 story">    
-                <!-- handwritten header -->
-                <h11>Work</h11> 
-                    <br>
-                
-                    <!-- genre -->
-                    <p>LAPOP Lab • 13th September 2022</p>
-                    <!-- name -->
-                    <h8>Insights Series: Who is Willing to Trade Away Elections for Material Guarantees?</h8>
-                    <!-- link -->
-                    <h12><br>I researched, wrote, conducted data anyalsis and created graphs for this report.</h12>
-
-                <!-- Picture container -->
-                <br>
-                <br>
-            </div>
-            </div>
-        </div>
-
-    </main>
     
-
-</main>
+<head>
+        <title>Spreadsheet Parser</title>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+      </head>
+      <body>
+        <h11>Work</h11>
+        <ul id="data-list">
+          <!-- List items will be inserted here -->
+        </ul>
+    
+        <script type="text/javascript">
+          var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1RHVT0xtkaSgbpRQ1zsdT4jKfYmhGhftLy9ZrHFgJXkU/pub?output=csv';
+    
+          function init() {
+            Papa.parse(public_spreadsheet_url, {
+              download: true,
+              header: true,
+              complete: showInfo
+            });
+          }
+    
+          window.addEventListener('DOMContentLoaded', init);
+    
+          function showInfo(results) {
+            var data = results.data;
+            var list = document.querySelector("#data-list");
+    
+            // Clear existing list items
+            list.innerHTML = "";
+    
+            // Iterate over each row in the data
+            data.forEach(row => {
+              var li = document.createElement("li");
+    
+              // Create a formatted string for each row
+              var text = `Genre: ${row['Genre'] || 'N/A'}, Year: ${row['Year'] || 'N/A'}, Name-Publication: ${row['Name-Publication'] || 'N/A'}, Link: ${row['Link'] || 'N/A'}, File: ${row['File'] || 'N/A'}`;
+              li.textContent = text;
+    
+              // Append the list item to the list
+              list.appendChild(li);
+            });
+    
+            // Log data to console for debugging
+            console.log(data);
+          }
+        </script>
+    
 
     <footer>
     </footer>
     
     <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/ids.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

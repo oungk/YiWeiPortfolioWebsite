@@ -87,6 +87,38 @@
 
 
     <!-- main body --> 
+    <!DOCTYPE html>
+    <html>
+      <body>
+        <p id="Genre"></p>
+    
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+        <script type="text/javascript">
+          var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1RHVT0xtkaSgbpRQ1zsdT4jKfYmhGhftLy9ZrHFgJXkU/pubhtml';
+    
+          function init() {
+            Papa.parse(public_spreadsheet_url, {
+              download: true,
+              header: true,
+              complete: showInfo
+            })
+          }
+    
+          window.addEventListener('DOMContentLoaded', init)
+    
+          function showInfo(results) {
+            var data = results.data
+    
+            // data comes through as a simple array since simpleSheet is turned on
+            alert("Successfully processed " + data.length + " rows!")
+            document.getElementById("Genre").innerHTML = "<strong>Genre:</strong> " + [ data[0].Name, data[1].Name, data[2].Name ].join(", ");
+            console.log(data);
+          }
+    
+          document.write("The published spreadsheet is located at <a target='_new' href='" + public_spreadsheet_url + "'>" + public_spreadsheet_url + "</a>");        
+        </script>
+      </body>
+    </html>
 
 </main>
 
@@ -102,6 +134,6 @@
     
     <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/ids.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
