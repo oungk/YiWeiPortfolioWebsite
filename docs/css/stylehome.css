@@ -19,7 +19,7 @@ body {
   gap: 1.5em; /* Adds space between the image and text containers */
   align-items: center;
   position: relative;
-  left: -3em;
+  left: 0em;
 }
 
 .home-left-container {
