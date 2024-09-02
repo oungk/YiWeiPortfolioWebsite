@@ -10,26 +10,31 @@ body {
 }
 
 nav {
-  background-color: black;
+background-color: black;
+position: fixed; /* Ensure it's properly set */
+top: 0; /* Stick to the top of the viewport */
+}
+
+.text-container {
+/*display: flex;*/
+align-items: center; /* Vertically centers items */
+justify-content: center; /* Horizontally centers items */
+/*margin-top: 20px; /* Add some padding inside the border */
+}
+
+/*TITLE IMAGE*/
+.img {
+position: flex;
 }
 
 /* Ensure the container uses Flexbox and items are in a row */
 .image-text-container {
 display: flex;           /* Use flexbox for layout */
 align-items: center;     /* Center items vertically */
+justify-content: center; /* Horizontally centers items */
+height: 100%; /* Set a height for demonstration or as needed */
+padding-bottom: 0.8em;
 }
-
-/* CSS rule for the right alignment of text */
-.right-align-text {
-text-align: left;
-margin-left: 10px;      /* Add some spacing between the image and text */
-}
-
-.text-container {
-border: 1.5px solid #000; /* Add a border around the text container */
-padding: 20px; /* Add some padding inside the border */
-}
-
 
 .smaller-image {
 width: 20%;             /* Set width to 50% of its container */
@@ -38,15 +43,6 @@ padding-top: 40px;
 padding-bottom: 40px;
 padding-right: 80px;
 
-}
-
-.press-container {
-display: flex;
-flex-direction: row; /* Change to row so the items are side-by-side */
-justify-content: center; /* align items vertically center */
-align-items: center;     /* align items horizontally center */
-background-color: lavender;
-padding: 100px;       /* Add some padding for spacing */
 }
 
 .heading {
@@ -111,55 +107,6 @@ margin: 0 auto; /* Center the image horizontally */
 .container {
 padding-top: 4px;
 padding-bottom: 8px;
-}
-
-/* Slideshow */
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-padding-top: 70px;
-max-width: 1000px;
-margin: auto;
-z-index: 1; /* Set a z-index value */
-position: relative; /* Position the container */
-}
-
-/* Next & previous buttons */
-.prev, .next {
-cursor: pointer;
-position: absolute;
-top: 50%;
-width: auto;
-margin-top: -22px;
-padding: 16px;
-color: lavender;
-font-weight: bold;
-font-size: 18px;
-border-radius: 0 3px 3px 0;
-user-select: none;
-background-color: lavender; /* Set the default background color */
-}
-
-/* Position the "next button" to the right */
-.next {
-right: 0;
-border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-background-color: lavender;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-padding-top: 75px;
-color: lavender;
-font-size: 12px;
-padding-left: 8px;
-position: absolute;
-top: 0;
 }
 
 /* Fading animation */

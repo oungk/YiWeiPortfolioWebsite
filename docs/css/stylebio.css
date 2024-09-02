@@ -18,6 +18,8 @@
 
 nav {
   background-color: #2B6BE6;
+  position: fixed; /* Ensure it's properly set */
+  top: 0; /* Stick to the top of the viewport */
 }
 
 /*MAIN ELEMENTS*/

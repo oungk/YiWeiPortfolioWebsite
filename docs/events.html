@@ -10,13 +10,13 @@
     <title onclick="location.href='index.html';">Yi Wei Portfolio Website</title>
 
      <!-- favicon -->
-     <link rel="SHORTCUT ICON" href="https://iili.io/dOGQfja.png">
+    <link rel="SHORTCUT ICON" href="https://iili.io/dOGQfja.png">
 
     <!-- CSS stylesheets -->
     <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
     <!-- see how bootstrap works: https://getbootstrap.com/docs/5.1/getting-started/introduction/ -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> <!-- Bootstrap — for aligning text columns -->
-    <link rel="stylesheet" href="css/main.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/main.css"> <!-- default styles -->
     <link rel="stylesheet" href="css/styleevents.css"> <!-- Local stylesheet — put all your design choices here -->
 
     <!-- Font Awesome — for the social media icons and hamburger menu icon -->
@@ -24,7 +24,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-
 
     <!-- TO DO: SOCIAL CARDS — editors will help you with this, don't worry about it for now -->
     <!-- BUT DONT FORGET ABOUT IT or your dom image won't show up on social media/texting -->
@@ -34,6 +33,7 @@
     <meta property="og:title" content="Yi Wei"/> <!-- headline -->
     <meta property="og:description" content="Portfolio Website"/> <!-- abstract -->
     <meta property="og:site_name" content="Portfolio Website">
+    <meta property="og:image" content="https://iili.io/JAaBKSS.jpg"/> <!-- link to dominant image -->
 
     <!--Twitter Social Card (Be sure to change these!)-->
     <meta name="twitter:card" content="summary_large_image">
@@ -41,10 +41,11 @@
     <meta name="twitter:creator" content="@VandyHustler">
     <meta name="twitter:title" content="Yi Wei"> <!-- headline -->
     <meta name="twitter:description" content="Portfolio Website"> <!-- abstract -->
+    <meta name="twitter:image" content="https://iili.io/JAaBKSS.jpg"> <!-- dominant image -->
 
 
 </head>
-<body>
+<body class="custom-cursor">
     <!-- Google Tag Manager -->
     <!-- (also don't have to worry about this at all) -->
     <noscript>
@@ -57,6 +58,8 @@
         })(window,document,'script','dataLayer','GTM-NBJX8F');
     </script>
     <!-- End Google Tag Manager -->
+
+    <!--Header-->
 
     <!-- Navbar -->
     <nav>
@@ -91,64 +94,25 @@
         </ul>
     </nav>
 
-
     <!-- main body -->
+    <main class="container">
+            <div class="image-text-container">
+            <img src="https://iili.io/dOGSNdG.png" alt="The word work handwritten by Yi Wei in red in title case">
+            </div>
+
+            <div class="row justify-content-center">
+            <div class="col-md-8 story"> 
+                <h1>Poetry</h1>
+            </div>
+            </div>
+    </main>
     
-<head>
-    <title>Spreadsheet Parser</title>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
-</head>
-  
 
-<body>
-    <img src="https://iili.io/dOGSNdG.png" alt="The word Events handwritten by Yi Wei in blue in title case">
-    <ul id="data-list">
-      <!-- List items will be inserted here -->
-    </ul>
-
-    <script type="text/javascript">
-      var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1RHVT0xtkaSgbpRQ1zsdT4jKfYmhGhftLy9ZrHFgJXkU/pub?output=csv';
-
-      function init() {
-        Papa.parse(public_spreadsheet_url, {
-          download: true,
-          header: true,
-          complete: showInfo
-        });
-      }
-
-      window.addEventListener('DOMContentLoaded', init);
-
-      function showInfo(results) {
-        var data = results.data;
-        var list = document.querySelector("#data-list");
-
-        // Clear existing list items
-        list.innerHTML = "";
-
-        // Iterate over each row in the data
-        data.forEach(row => {
-          var li = document.createElement("li");
-
-          // Create a formatted string for each row
-          var text = `Genre: ${row['Genre'] || 'N/A'}, Year: ${row['Year'] || 'N/A'}, Name-Publication: ${row['Name-Publication'] || 'N/A'}, Link: ${row['Link'] || 'N/A'}, File: ${row['File'] || 'N/A'}`;
-          li.textContent = text;
-
-          // Append the list item to the list
-          list.appendChild(li);
-        });
-
-        // Log data to console for debugging
-        console.log(data);
-      }
-    </script>
-
-
-<footer>
-</footer>
-
-<!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="js/main.js"></script>
+    <footer>
+    </footer>
+    
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -9,22 +9,21 @@
     <!-- TO DO change to your title -->
     <title onclick="location.href='index.html';">Yi Wei Portfolio Website</title>
 
-    <!-- favicon -->
-    <!--<link rel="SHORTCUT ICON" href="#"> -->
+     <!-- favicon -->
+    <link rel="SHORTCUT ICON" href="https://iili.io/dOGQfja.png">
 
     <!-- CSS stylesheets -->
     <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
     <!-- see how bootstrap works: https://getbootstrap.com/docs/5.1/getting-started/introduction/ -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> <!-- Bootstrap — for aligning text columns -->
-    <link rel="stylesheet" href="css/main.css"> <!-- IDS stylesheet — default IDS styles -->
-    <link rel="stylesheet" href="css/stylehome.css"> <!-- Local stylesheet — put all your design choices here -->
+    <link rel="stylesheet" href="css/main.css"> <!-- default styles -->
+    <link rel="stylesheet" href="css/stylecontact-me.css"> <!-- Local stylesheet — put all your design choices here -->
 
     <!-- Font Awesome — for the social media icons and hamburger menu icon -->
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-
 
     <!-- TO DO: SOCIAL CARDS — editors will help you with this, don't worry about it for now -->
     <!-- BUT DONT FORGET ABOUT IT or your dom image won't show up on social media/texting -->
@@ -34,6 +33,7 @@
     <meta property="og:title" content="Yi Wei"/> <!-- headline -->
     <meta property="og:description" content="Portfolio Website"/> <!-- abstract -->
     <meta property="og:site_name" content="Portfolio Website">
+    <meta property="og:image" content="https://iili.io/JAaBKSS.jpg"/> <!-- link to dominant image -->
 
     <!--Twitter Social Card (Be sure to change these!)-->
     <meta name="twitter:card" content="summary_large_image">
@@ -41,10 +41,11 @@
     <meta name="twitter:creator" content="@VandyHustler">
     <meta name="twitter:title" content="Yi Wei"> <!-- headline -->
     <meta name="twitter:description" content="Portfolio Website"> <!-- abstract -->
+    <meta name="twitter:image" content="https://iili.io/JAaBKSS.jpg"> <!-- dominant image -->
 
 
 </head>
-<body>
+<body class="custom-cursor">
     <!-- Google Tag Manager -->
     <!-- (also don't have to worry about this at all) -->
     <noscript>
@@ -59,57 +60,52 @@
     <!-- End Google Tag Manager -->
 
     <!--Header-->
-        <!-- Navbar -->
-        <nav>
-            <ul>
-                <li class="toggle">
-                    <i class="fas fa-bars fa-lg"></i>
-                </li>
-    
-                <li class="item">
-                    <a href="index.html">
-                        <h9 id="aboutLabel"> HOME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h9>
-                    </a>
-                <li class="item">
-                    <a href="work.html">
-                        <h9 id="aboutLabel"> WORK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h9>
-                    </a>
-                <li class="item">
-                    <a href="events.html">
-                        <h9 id="aboutLabel"> EVENTS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h9>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="bio.html">
-                        <h9 id="aboutLabel"> BIO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h9>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="contact-me.html">
-                        <h9 id="aboutLabel"> Write me a letter...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h9>
-                    </a>
-                </li>
-            </ul>
-        </nav>
 
-        <!-- Headline, subhed -->
-        <!-- feel free to change this up — you don't need it to have data scroll speed, 
-        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li class="toggle">
+                <i class="fas fa-bars fa-lg"></i>
+            </li>
 
-    <!-- main article -->
-    <main>
-        <article class="container">
+            <li class="item">
+                <a href="index.html">
+                    <h9 id="aboutLabel"> HOME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h9>
+                </a>
+            <li class="item">
+                <a href="work.html">
+                    <h9 id="aboutLabel"> WORK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h9>
+                </a>
+            <li class="item">
+                <a href="events.html">
+                    <h9 id="aboutLabel"> EVENTS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h9>
+                </a>
+            </li>
+            <li class="item">
+                <a href="bio.html">
+                    <h9 id="aboutLabel"> BIO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h9>
+                </a>
+            </li>
+            <li class="item">
+                <a href="contact-me.html">
+                    <h9 id="aboutLabel"> Write me a letter...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h9>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- main body -->
+    <main class="container">
+            <div class="image-text-container">
+            <img src="https://iili.io/dOts6c7.png" alt="The words Write me a letter... handwritten by Yi Wei in red in title case">
+            </div>
+
             <div class="row justify-content-center">
-            <div class="col-md-6 story"> 
+            <div class="col-md-8 story"> 
+            </div>
+            </div>
+    </main>
     
-                <p>
-                    TKTK
-                </p>
-
-            </div>
-            </div>
-    </article>
-</main>
 
     <footer>
     </footer>

@@ -14,6 +14,7 @@ body {
 
 .box-container {
   display: flex;
+  margin: 0;
   flex-wrap: wrap;
   gap: 1.5em; /* Adds space between the image and text containers */
   align-items: center;
@@ -21,12 +22,16 @@ body {
   left: -3em;
 }
 
+.home-left-container {
+  margin-top: -12em;
+  display: flex;
+}
+
 /*bio image*/
 .home-img-container {
   flex: 1;
   max-width: 440px; 
   max-height: 578px; 
-  margin-top: 60px;
   overflow: hidden; /* Hides the parts of the image that overflow the container */
   display: flex;
 }
@@ -48,10 +53,11 @@ h9 { /* nav */
   text-align: center;
 }
 
-.bio-text-container {
+.home-text-container {
+  position: relative;
   flex: 2; /* Takes up more space */
-  position: relative; /* Allows image to overlap */
   z-index: 1; /* Ensures text appears on top */
+  margin-top: 10em;
   max-width: 483px; /* Ensures the text container has a maximum width */
   justify-content: center;
   text-align: center;
@@ -77,24 +83,23 @@ h9 { /* nav */
 }
 
 
-.footer-logo {
-  max-width: 20%; /* Ensure the image doesn't exceed its container */
-  height: auto; /* Maintain the image's aspect ratio */
-  display: block; /* Remove extra space below the image */
-  margin: 0 auto; /* Center the image horizontally */
-}
+/*FOOTER*/
 
 /* Optional: Add some space around the image */
 .container {
-  padding-top: 4px;
-  padding-bottom: 8px;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
-footer .col-md-3 {
-  margin-top: 0;            /* Remove top margin if any */
-  padding-top: 0;           /* Remove top padding if any */
-  margin-bottom: 20px; /* Adjust the value for the desired space */
+.col-md-4  {
+  display: flex;
+  align-items: center; /* Vertically center content in the column */
+  justify-content: center; /* Horizontally center content in the column */
+  text-align: center;
+  padding-top: 10px; /* Optional: Add padding inside the box */
+  background-color: #FFF975; /* Add a background color inside the box */
 }
+
 
 
 /* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */

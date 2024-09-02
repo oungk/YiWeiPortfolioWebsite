@@ -95,55 +95,28 @@
     </nav>
 
     <!-- main body -->
-    
-<head>
-        <title>Spreadsheet Parser</title>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
-</head>
-      
+    <main class="container">
+            <div class="image-text-container">
+            <img src="https://iili.io/dOGky1s.png" alt="The word work handwritten by Yi Wei in red in title case">
+            </div>
 
-<body>
-        <img src="https://iili.io/dOGky1s.png" alt="The word work handwritten by Yi Wei in red in title case">
-        <ul id="data-list">
-          <!-- List items will be inserted here -->
-        </ul>
-    
-        <script type="text/javascript">
-          var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1RHVT0xtkaSgbpRQ1zsdT4jKfYmhGhftLy9ZrHFgJXkU/pub?output=csv';
-    
-          function init() {
-            Papa.parse(public_spreadsheet_url, {
-              download: true,
-              header: true,
-              complete: showInfo
-            });
-          }
-    
-          window.addEventListener('DOMContentLoaded', init);
-    
-          function showInfo(results) {
-            var data = results.data;
-            var list = document.querySelector("#data-list");
-    
-            // Clear existing list items
-            list.innerHTML = "";
-    
-            // Iterate over each row in the data
-            data.forEach(row => {
-              var li = document.createElement("li");
-    
-              // Create a formatted string for each row
-              var text = `Genre: ${row['Genre'] || 'N/A'}, Year: ${row['Year'] || 'N/A'}, Name-Publication: ${row['Name-Publication'] || 'N/A'}, Link: ${row['Link'] || 'N/A'}, File: ${row['File'] || 'N/A'}`;
-              li.textContent = text;
-    
-              // Append the list item to the list
-              list.appendChild(li);
-            });
-    
-            // Log data to console for debugging
-            console.log(data);
-          }
-        </script>
+            <div class="row justify-content-center">
+            <div class="col-md-8 story"> 
+                <div class = "genre">
+                    <h1>Poetry</h1>
+                    <div class="year">
+                        <h2>2024</h2>
+                        <h2>MANIFESTO FOR HOPE, Mizna</h2>
+                        <h2>2024</h2>
+                        <h2>OLDER</h2>
+                    </div>
+                </div>
+                <div class = "genre">
+                    <h1>Editorial</h1>
+                </div>
+            </div>
+            </div>
+    </main>
     
 
     <footer>
