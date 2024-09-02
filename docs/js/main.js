@@ -18,10 +18,20 @@ function init() {
         <title>Spreadsheet Parser</title>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
 </head>
+
+/* LINK IN NEW WINDOW */
+document.addEventListener('DOMContentLoaded', () => {
+  // Add target="_blank" and rel="noopener noreferrer" to all links
+  document.querySelectorAll('a').forEach(link => {
+      link.setAttribute('target', '_blank');
+      link.setAttribute('rel', 'noopener noreferrer');
+  });
+});
+
+/*
       
 
 <body>
-        <img src="https://iili.io/dOGky1s.png" alt="The word work handwritten by Yi Wei in red in title case">
         <ul id="data-list">
           <!-- List items will be inserted here -->
         </ul>

@@ -36,6 +36,15 @@ height: 100%; /* Set a height for demonstration or as needed */
 padding-bottom: 0.8em;
 }
 
+/* BODY TEXT */
+.styled-list {
+  list-style-type: disc;
+  font-family: 'Sometype Mono';
+  font-size: 20px;
+  font-weight: medium;
+  color: #0A66C2;
+
+}
 .smaller-image {
 width: 20%;             /* Set width to 50% of its container */
 height: auto;           /* Maintain aspect ratio */

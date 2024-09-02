@@ -53,6 +53,13 @@ h9 { /* nav */
   text-align: center;
 }
 
+a:link,
+a:visited {
+    color: inherit; /* Inherit color from parent */
+    text-decoration: none; /* Remove default underline */
+    border-bottom: none; /* Add underline with the current text color */
+}
+
 .home-text-container {
   position: relative;
   flex: 2; /* Takes up more space */
