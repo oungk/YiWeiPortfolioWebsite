@@ -10,13 +10,13 @@
     <title onclick="location.href='index.html';">Yi Wei Portfolio Website</title>
 
     <!-- favicon -->
-    <!--<link rel="SHORTCUT ICON" href="#"> -->
+    <link rel="SHORTCUT ICON" href="https://iili.io/dOGQfja.png">
 
     <!-- CSS stylesheets -->
     <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
     <!-- see how bootstrap works: https://getbootstrap.com/docs/5.1/getting-started/introduction/ -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> <!-- Bootstrap — for aligning text columns -->
-    <link rel="stylesheet" href="css/main.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/main.css"> <!-- default styles -->
     <link rel="stylesheet" href="css/stylehome.css"> <!-- Local stylesheet — put all your design choices here -->
 
     <!-- Fonts -->
@@ -45,7 +45,7 @@
 
 
 </head>
-<body class="custom-cursor">
+<body>
     <!-- Google Tag Manager -->
     <!-- (also don't have to worry about this at all) -->
     <noscript>
@@ -58,75 +58,31 @@
         })(window,document,'script','dataLayer','GTM-NBJX8F');
     </script>
     <!-- End Google Tag Manager -->
-
-    <!--Header-->
-
-    <!-- Navbar -->
-    <nav>
-    </nav>
     
-    <main class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12 story">    
-                <!-- Container to hold image and text -->
-                <a href="work.html"><h9>WORK<br></h9></a>
-                <a href="events.html"><h9>EVENTS<br></h9></a>
-                <a href="bio.html"><h9>BIO<br></h9></a>
-                <a href="contact-me"><h9>Write me a letter...<br></h9></a>
-                <div class="image-text-container">
-                    <!-- Image with the specified path -->
-                    <!--<img class="smaller-image" src="https://iili.io/JR7tAQ4.png" alt="Description of the image">-->
-    
-                    <!-- Text with the class name for right alignment -->
-                    <h4 class="right-align-text">
-                    </h4>
+    <main>
+        <article class="box-container">
+            <img class="text-img" src="https://iili.io/dOrtBdx.png" alt="Yi Wei written in red cursive">
+            <div class="home-img-container">
+                <img class="home-img" src="https://iili.io/dOg9jrg.jpg" alt="Yi Wei, March 2024">
+            </div>
+            
+            <div class="bio-text-container">
+                <div class="text">
+                    <a href="work.html"><h9>WORK<br></h9></a>
+                    <a href="events.html"><h9>EVENTS<br></h9></a>
+                    <a href="bio.html"><h9>BIO<br></h9></a>
+                    <a href="contact-me"><h9>Write me a letter...<br></h9></a>
                 </div>
-                </div>
-        </div>
+            </div>  
+
+        </article>        
     </main>
-
-
-    <!-- main body --> 
-    <!DOCTYPE html>
-    <html>
-      <body>
-        <p id="Genre"></p>
-    
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
-        <script type="text/javascript">
-          var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1RHVT0xtkaSgbpRQ1zsdT4jKfYmhGhftLy9ZrHFgJXkU/pubhtml';
-    
-          function init() {
-            Papa.parse(public_spreadsheet_url, {
-              download: true,
-              header: true,
-              complete: showInfo
-            })
-          }
-    
-          window.addEventListener('DOMContentLoaded', init)
-    
-          function showInfo(results) {
-            var data = results.data
-    
-            // data comes through as a simple array since simpleSheet is turned on
-            alert("Successfully processed " + data.length + " rows!")
-            document.getElementById("Genre").innerHTML = "<strong>Genre:</strong> " + [ data[0].Name, data[1].Name, data[2].Name ].join(", ");
-            console.log(data);
-          }
-    
-          document.write("The published spreadsheet is located at <a target='_new' href='" + public_spreadsheet_url + "'>" + public_spreadsheet_url + "</a>");        
-        </script>
-      </body>
-    </html>
-
-</main>
 
     <footer>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6 text-center"> <!-- Center the content in the column -->
-                    <p style="margin-top: 20px;"><small> © 2024 YI WEI / DESIGNED BY KATHERINE OUNG</small></p>
+                    <p style="margin-top: 50px;"><small> © 2024 YI WEI / DESIGNED BY KATHERINE OUNG</small></p>
                 </div>
             </div>
         </div>

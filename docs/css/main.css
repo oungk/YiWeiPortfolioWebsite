@@ -28,26 +28,18 @@ html {
 /* Use color variables so it's easier to change colors later */
 /* Will create a warning in the W3C CSS validator */
 /* Ignore that - CSS variables are fine to use */
-:root {
-    --footer: #F2EEE3;
-    --gray: rgb(0, 0, 0, 0.1);
-}
-
-body {
-    cursor: url('https://iili.io/JRGAgWB.png'), pointer;
-}
 
 /*
     TYPOGRAPHY
 */
-p {
-    font-family: 'Georgia', serif;
-    font-weight: 300;
-    font-size: 12px;
-    justify-content: left;
-
+p { /* body copy */
+    font-family: 'Sometype Mono';
+    font-size: 16px;
+    font-weight: 300px;
+    color: white;
 
 }
+
 h1 {
     font-family: 'Luxurious Script', cursive;;
     font-weight: 500;
@@ -171,13 +163,13 @@ h5 {
     padding-bottom: 30px;
 }
 
-h9 { /* navbar */
+h9 { /* navbar dark yellow*/
     font-family: 'Times New Roman';
     font-weight: 400;
     font-size: 18px;
     line-height: 18px;
     top: 5.8px;
-    color: white;
+    color: #C0B800;
 }
 
 h10 {  /*Subheadlines*/
@@ -209,14 +201,6 @@ h12 {
     text-align: left;
     margin-top: 80px !important; /* Increased margin-top for more space */
     margin-bottom: 20px !important;
-}
-
-p { /* body copy */
-    font-family: 'Sometype Mono';
-    font-size: 16px;
-    font-weight: 300px;
-    color: white;
-
 }
 
 
@@ -257,17 +241,6 @@ footer {
     text-align: center;
 }
 
-body {
-    cursor: url('https://iili.io/JR7Qaol.png'), auto;
-}
-
-/* 
-    HEADER
-*/
-header {
-    background-size: cover;
-    height: 100vh; /* makes image same height as screen */
-}
 /* navbar */
 nav {
     color: black; /* Set your desired text color */
@@ -278,8 +251,6 @@ nav {
     /*border: 2px solid #F2EEE3; /* This adds a black border to the bottom of the nav */
     padding-top: -0.5px;
 }
-
-
 
 nav li {
     list-style-type: none;
@@ -301,13 +272,6 @@ nav ul {
     flex-flow: row wrap;
     -webkit-align-items: center;
     align-items: center;
-}
-
-li.logo p {
-    display: inline; /* Display the text inline with the logo */
-    margin-left: 10px; /* Adjust the spacing as needed */
-    margin-top: 10px; /* Adjust the margin-top to move the text down */
-
 }
 
 /* styles for li items makes the spacing/alignment work on the menu */
@@ -335,7 +299,7 @@ li.item {
     text-align: center;
 }
 li.item a {
-    margin-top: 0em; /* Adjust this value to move the "ABOUT" text up */
+    margin-top: 1em; /* Adjust this value to move the "ABOUT" text up */
 
 }
 li.toggle {
@@ -374,48 +338,6 @@ ul div {
     margin-bottom: 8px;
 } */
 
-/* DROPDOWN MENU
-*/
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #F2EEE3;
-    min-width: 160px;
-    z-index: 1;
-    top: 22px;
-
-}
-
-/* Show Dropdown Content on Hover */
-.item.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.item.dropdown {
-    margin-left: auto; /* Push "THE SURVEY" to the right */
-    margin: 10; /* Reset margins */
-    padding: 0; /* Reset paddings */
-    top: 0px;
-}
-
-
-/* Add some style to the dropdown links */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    z-index: 1;
-    top: 50px; /* Adjust this value to move the dropdown content down */
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: rgba(214, 180, 100, 0.4); /* Adjusted alpha value to 0.8 */
-}
-
-
 /* 
     ARTICLE ALIGNMENT (flexbox added in larger view widths)
 */
@@ -429,24 +351,14 @@ section p:first-child {
     padding-top: 6.5px;
 }
 
-.chart-container {
-    max-width: 500px;
-    margin: 0 auto; /* This will center the container if its width is less than the parent container */
-}
-
 /* 
     PHOTOS
 */
-img {
-    display: block;
+.bio-img {
+    display: box;
     width: 100%;
 }
-figcaption {
-    margin-top: 2px;
-    font-size: 14px;
-    font-family: sans-serif;
-    line-height: 20px;
-}
+
 .big-image {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -566,13 +478,6 @@ nav li a:hover, nav li a:active {
 /*
     FOOTER
 */
-footer {
-    /*background-color: var(--footer);  Use CSS variable for background color if defined elsewhere */
-    padding: 30px 0 15px;
-    text-align: center;  /* Center-align text within the footer */
-    padding-top: 50px;
-    padding-bottom: 40px;
-}
 
 /* Remove bullet and underline from list items */
 .item {
@@ -626,14 +531,26 @@ No media query for `xs` since this is the default */
         color: #D6B464;
     }
 
+    h6 { /* navbar */
+        font-style: Times New Roman;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 18px;
+        text-align: left;
+        margin-left: 0; 
+        padding-left: 0;  /* If you want to ensure it's against the left edge, set padding-left to 0 */
+    }
+
     h9 { /* navbar */
         font-weight: 400;
         font-size: 18px;
         line-height: 18px;
         text-align: left;
-        margin-left: 0; /* Potential issue: Missing 'px' or other unit */
+        margin-left: 0; 
         padding-left: 0;  /* If you want to ensure it's against the left edge, set padding-left to 0 */
     }
+
+
 
     nav {
         padding-top: 0px;
@@ -651,8 +568,7 @@ No media query for `xs` since this is the default */
     }
 
     li.item a {
-        margin-top: 0em; /* Adjust this value to move the "ABOUT" text up */
-    
+        margin-top: 0em; 
     }
 
     .item.dropdown {
