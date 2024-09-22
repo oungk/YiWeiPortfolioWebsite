@@ -5,7 +5,7 @@
 /* set any colors you plan to use throughout the buildout here */
 /* then you can adjust the color value easily */
 
-body {
+:root {
     background-color: white;
 }
 

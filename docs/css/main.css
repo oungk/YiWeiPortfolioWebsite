@@ -51,13 +51,13 @@ li a {
     font-weight: normal; /* Removes bold */
 }
 
-a, h2 { /* second headline */
+a, h2 { /* second headline work */
     font-family: 'Sometype Mono';
     font-size: 20px;
     font-weight: bold;
     color: #0A66C2;
 }
-h3 { /* section header */
+h3 { /* section headline events */
     font-family: 'Sometype Mono';
     font-size: 20px;
     font-weight: bold;

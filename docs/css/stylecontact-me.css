@@ -15,11 +15,56 @@ position: fixed; /* Ensure it's properly set */
 top: 0; /* Stick to the top of the viewport */
 }
 
+h2 {
+  margin-top: 20px;
+  color: #FFF975;
+}
+
+.center-container {
+  display: flex;
+  align-items: center; /* Vertically centers items */
+  justify-content: center; /* Horizontally centers items */
+  height: 100px; /* Set a height for vertical centering */
+}
+
+
+.field {
+  margin-bottom: 10px;
+}
+
+.field label {
+  display: block;
+  font-size: 16px;
+  color: #FFF975;
+  font-family: 'Times New Roman';
+}
+
+.field input {
+  display: block;
+  border: 1px solid #FFF975;
+  background-color: #9E0008;
+  color: white;
+  min-width: 500px;
+  line-height: 1.5;
+  font-size: 14px;
+  font-family: 'Sometype Mono'
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  display: block;
+  padding: 4px 20px;
+  font-size: 14px;
+  font-family: 'Sometype Mono';
+  background-color: #FFF975;
+  color: #2B6BE6;
+  border: none
+}
+
+
 .text-container {
-/*display: flex;*/
 align-items: center; /* Vertically centers items */
 justify-content: center; /* Horizontally centers items */
-/*margin-top: 20px; /* Add some padding inside the border */
 }
 
 /*TITLE IMAGE*/

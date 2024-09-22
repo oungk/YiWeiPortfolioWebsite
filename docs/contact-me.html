@@ -7,10 +7,10 @@
     
     <!-- Title -->
     <!-- TO DO change to your title -->
-    <title onclick="location.href='index.html';">Yi Wei Portfolio Website</title>
+    <title onclick="location.href='index.html';">Yi Wei</title>
 
-     <!-- favicon -->
-    <link rel="SHORTCUT ICON" href="https://iili.io/dOGQfja.png">
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON" href="https://iili.io/dODje6v.png">
 
     <!-- CSS stylesheets -->
     <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
@@ -25,9 +25,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 
-    <!-- TO DO: SOCIAL CARDS — editors will help you with this, don't worry about it for now -->
-    <!-- BUT DONT FORGET ABOUT IT or your dom image won't show up on social media/texting -->
-    <!--Open Graph Card for social display (Be sure to change these!)-->
+    <!-- SOCIAL CARDS -->
     <meta property="og:url" content="http://yiwei.com"/>
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="Yi Wei"/> <!-- headline -->
@@ -35,7 +33,7 @@
     <meta property="og:site_name" content="Portfolio Website">
     <meta property="og:image" content="https://iili.io/JAaBKSS.jpg"/> <!-- link to dominant image -->
 
-    <!--Twitter Social Card (Be sure to change these!)-->
+    <!--Twitter Social Card-->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@kathoung">
     <meta name="twitter:creator" content="@VandyHustler">
@@ -45,7 +43,7 @@
 
 
 </head>
-<body class="custom-cursor">
+<body>
     <!-- Google Tag Manager -->
     <!-- (also don't have to worry about this at all) -->
     <noscript>
@@ -101,16 +99,39 @@
             </div>
 
             <div class="row justify-content-center">
-            <div class="col-md-8 story"> 
+            <div class="col-md-4.5 story"> 
+                <form id="form">        
+                    <div class="field">
+                    <label for="from_name">your name</label>
+                    <input type="text" name="from_name" id="from_name">
+                    </div>
+                    <div class="field">
+                        <label for="user_email">your email</label>
+                        <input type="text" name="user_email" id="user_email">
+                    </div>
+                    <div class="field" id="message">
+                    <label for="message">subject</label>
+                    <input type="text" name="message" id="message">
+                    </div>
+                    <div class="field">
+                    <label for="subject">your message</label>
+                    <input type="text" name="subject" id="subject">
+                    </div>
+
+                    <input type="submit" id="button" value="submit" >
+                </form>
+
+                <div class="center-container">
+                    <h2>@ yiiiiwei on IG and Twitter</h2>
+                </div>
+
             </div>
             </div>
     </main>
     
-
-    <footer>
-    </footer>
-    
     <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript"> emailjs.init('Z1kS-pZGHa7ab0NRX') </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
 </body>

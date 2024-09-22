@@ -3,6 +3,7 @@
 IMPORT GOOGLE SHEET
 */
 
+/*
 function init() {
     Tabletop.init( { key: ‘https://docs.google.com/spreadsheets/d/1RHVT0xtkaSgbpRQ1zsdT4jKfYmhGhftLy9ZrHFgJXkU/pubhtml',
     callback: function(data, tabletop) {
@@ -19,7 +20,9 @@ function init() {
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
 </head>
 
-/* LINK IN NEW WINDOW */
+*/
+
+/* LINK IN NEW WINDOW 
 document.addEventListener('DOMContentLoaded', () => {
   // Add target="_blank" and rel="noopener noreferrer" to all links
   document.querySelectorAll('a').forEach(link => {
@@ -27,10 +30,12 @@ document.addEventListener('DOMContentLoaded', () => {
       link.setAttribute('rel', 'noopener noreferrer');
   });
 });
+*/
 
-/*
+
+
       
-
+/*
 <body>
         <ul id="data-list">
           <!-- List items will be inserted here -->
@@ -71,4 +76,29 @@ document.addEventListener('DOMContentLoaded', () => {
             // Log data to console for debugging
             console.log(data);
           }
-        </script> */
+        </script> 
+*/
+
+/*
+EMAIL CONTACT FORM
+*/
+
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_96e6suc';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Sent!';
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
