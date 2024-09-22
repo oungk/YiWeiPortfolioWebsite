@@ -1,2 +1,2 @@
-# YiWeiPortfolioWebsite
-Commission for Yi Wei's professional portfolio website
+# Yi Wei Portfolio Website
+Commission for Yi Wei's professional portfolio website!
