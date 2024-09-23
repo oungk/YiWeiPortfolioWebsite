@@ -510,35 +510,7 @@ No media query for `xs` since this is the default */
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-    .chart-container {
-        max-width: 300px;
-        margin: 0 auto; /* This will center the container if its width is less than the parent container */
-    }
 
-    h1 { /* first headline */
-        padding: 35vh 0 0.75em;
-        font-size: 50px;
-        line-height: 50px;
-        overflow-wrap: break-word;
-    }
-
-    h5 { /* box head */
-        font-weight: 700;
-        font-size: 15px;
-        line-height: 23px;
-        text-align: center;
-        color: #D6B464;
-    }
-
-    h6 { /* navbar */
-        font-style: Times New Roman;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 18px;
-        text-align: left;
-        margin-left: 0; 
-        padding-left: 0;  /* If you want to ensure it's against the left edge, set padding-left to 0 */
-    }
 
     h9 { /* navbar */
         font-weight: 400;
@@ -561,7 +533,7 @@ No media query for `xs` since this is the default */
         padding: 10px;
         display: flex;
         justify-content: left; /* This will evenly distribute the items horizontally */
-        align-items: left; /* This will vertically center align the items */
+        align-items: right; /* This will vertically center align the items */
         flex-flow: row nowrap; /* Prevents items from wrapping onto the next line */
         -webkit-align-items: center;
     }

@@ -5,6 +5,10 @@
 /* set any colors you plan to use throughout the buildout here */
 /* then you can adjust the color value easily */
 
+body {
+  background-color: black;
+}
+
 h2 {
   color: #E31F29;
   font-weight: normal;
@@ -12,10 +16,6 @@ h2 {
 
 a {
   font-weight: normal;
-}
-
-body {
-  background-color: black;
 }
 
 nav {
@@ -42,7 +42,14 @@ display: flex;           /* Use flexbox for layout */
 align-items: center;     /* Center items vertically */
 justify-content: center; /* Horizontally centers items */
 height: 100%; /* Set a height for demonstration or as needed */
-padding-bottom: 0.8em;
+margin-bottom: 1.5em;
+}
+
+.upcoming h3, 
+.upcoming h2, 
+.upcoming a {
+  background-color: #FFF975;
+  display: inline-block;
 }
 
 .smaller-image {

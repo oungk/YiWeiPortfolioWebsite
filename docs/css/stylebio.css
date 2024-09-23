@@ -10,10 +10,12 @@
   /* --mycolor: #your color here; */
   --yiweiblue: #2B6BE6;
 
-  body {
-      background-color:#2B6BE6;
-  }
+}
 
+body {
+  background-color:#2B6BE6;
+  display: flex;
+  justify-content: center;
 }
 
 nav {
@@ -22,15 +24,21 @@ nav {
   top: 0; /* Stick to the top of the viewport */
 }
 
+footer {
+  margin-bottom: 8em;
+}
+
 /*MAIN ELEMENTS*/
 /* Ensure the container uses Flexbox and items are in a row */
 
 .box-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 5em; /* Adds space between the image and text containers */
   align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 1500px;
 }
 
 /*bio image*/

@@ -22,8 +22,9 @@ body {
   flex-wrap: wrap;
   gap: 1.5em; /* Adds space between the image and text containers */
   align-items: center;
+  justify-content: center;
   position: relative;
-  left: -3em;
+  width: 1500px;
 }
 
 .home-left-container {
@@ -124,8 +125,56 @@ No media query for `xs` since this is the default */
     
 } */
 
-@media (max-width: 1000px) {
+@media (max-width: 600px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 483px; /* Ensures the text container has a maximum width */
 }
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 483px; /* Ensures the text container has a maximum width */
+}
+
+.text-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-left-container {
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 483px; /* Ensures the text container has a maximum width */
+}
+
+.home-text-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  max-width: 483px; /* Ensures the text container has a maximum width */
+  justify-content: center;
+  text-align: center;
+  line-height: 3.5; /* Adjust this value to increase or decrease line spacing */
+}
+
+.text-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+}
+
+
 
 /* Medium devices (tablets, 768px and up) */
 /*@media (min-width: 768px) {
