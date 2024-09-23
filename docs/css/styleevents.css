@@ -5,6 +5,15 @@
 /* set any colors you plan to use throughout the buildout here */
 /* then you can adjust the color value easily */
 
+h2 {
+  color: #E31F29;
+  font-weight: normal;
+}
+
+a {
+  font-weight: normal;
+}
+
 body {
   background-color: black;
 }

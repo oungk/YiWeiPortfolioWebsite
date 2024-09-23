@@ -37,6 +37,13 @@ padding-bottom: 0.8em;
 }
 
 /* BODY TEXT */
+h1 {
+  margin-bottom: 1em;
+}
+
+.genre {
+  margin-bottom: 3em;
+}
 .styled-list {
   list-style-type: disc;
   font-family: 'Sometype Mono';
@@ -44,6 +51,10 @@ padding-bottom: 0.8em;
   font-weight: medium;
   color: #0A66C2;
 
+}
+
+a {
+  color: #0A66C2;
 }
 .smaller-image {
 width: 20%;             /* Set width to 50% of its container */
