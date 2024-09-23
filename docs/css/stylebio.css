@@ -44,11 +44,11 @@ footer {
 /*bio image*/
 .bio-img-container {
   flex: 1;
+  display: flex;
   max-width: 440px; 
   max-height: 578px; 
-  margin-top: 60px;
+  margin-top: -105px;
   overflow: hidden; /* Hides the parts of the image that overflow the container */
-  display: flex;
 }
 
 .bio-img {
@@ -75,7 +75,7 @@ p { /* body copy */
   height: auto; /* Ensures proportional scaling */
   width: 20em; /* Fills container width */
   object-fit: cover; /* Crops the image to fit */
-  left: 2.5em;
+  left: -7em;
 }
 
 .text {
