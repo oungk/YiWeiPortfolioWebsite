@@ -67,6 +67,7 @@ p { /* body copy */
   position: relative; /* Allows image to overlap */
   z-index: 1; /* Ensures text appears on top */
   max-width: 483px; /* Ensures the text container has a maximum width */
+  margin-top: -1em;
 }
 
 /* Text image for overlap effect */

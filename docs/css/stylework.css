@@ -34,6 +34,7 @@ align-items: center;     /* Center items vertically */
 justify-content: center; /* Horizontally centers items */
 height: 100%; /* Set a height for demonstration or as needed */
 padding-bottom: 0.8em;
+padding-top: 1em;
 }
 
 /* BODY TEXT */

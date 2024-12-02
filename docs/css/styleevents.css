@@ -25,10 +25,8 @@ top: 0; /* Stick to the top of the viewport */
 }
 
 .text-container {
-/*display: flex;*/
 align-items: center; /* Vertically centers items */
 justify-content: center; /* Horizontally centers items */
-/*margin-top: 20px; /* Add some padding inside the border */
 }
 
 /*TITLE IMAGE*/
@@ -42,7 +40,8 @@ display: flex;           /* Use flexbox for layout */
 align-items: center;     /* Center items vertically */
 justify-content: center; /* Horizontally centers items */
 height: 100%; /* Set a height for demonstration or as needed */
-margin-bottom: 1.5em;
+padding-bottom: 0.8em;
+padding-top: 1em;
 }
 
 .upcoming h3, 
