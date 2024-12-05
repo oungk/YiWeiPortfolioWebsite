@@ -186,13 +186,12 @@ No media query for `xs` since this is the default */
 
 } */
 
-@media (max-width: 1000px) {
-header {
-background: url('https://iili.io/JAQZh2s.jpg');
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center center;
-}
+@media (max-width: 768px) {
+
+  .container {
+    max-width: 400px;
+  }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
