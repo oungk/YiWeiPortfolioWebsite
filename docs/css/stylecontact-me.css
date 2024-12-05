@@ -80,18 +80,10 @@ max-width: 580px;
 display: flex;           /* Use flexbox for layout */
 align-items: center;     /* Center items vertically */
 justify-content: center; /* Horizontally centers items */
-height: 100%; /* Set a height for demonstration or as needed */
+max-width: 100%;
+height: auto;
 padding-bottom: 0.8em;
 margin-top: 3em;
-}
-
-.smaller-image {
-width: 20%;             /* Set width to 50% of its container */
-height: auto;           /* Maintain aspect ratio */
-padding-top: 40px;
-padding-bottom: 40px;
-padding-right: 80px;
-
 }
 
 .heading {
@@ -112,6 +104,7 @@ text-align: left;         /* Align text to the left */
 width: 70%;                /* Width for content to control its size */
 margin-right: 50px;       /* Add margin to the right to move it slightly to the left */
 }
+
 
 .content p {
 margin: 10px 0;           /* Add some vertical spacing between paragraphs */
@@ -188,21 +181,28 @@ No media query for `xs` since this is the default */
 
 @media (max-width: 768px) {
 
-  .container {
-    max-width: 400px;
-  }
-
+  .form-container {
+    width: 90%;
 }
 
-/* Medium devices (tablets, 768px and up) */
-/*@media (min-width: 768px) {
-header {
-    /* adjust header image positioning for larger devices if needed */
-    /* you can also change the header image for mobile here */
-    /* background-position: 50% 50%; 
-} 
+.image-text-container img {
+    max-width: 90%;
 }
-*/
+
+.field label {
+    font-size: 0.9rem;
+}
+
+.field input {
+    font-size: 0.9rem;
+    padding: 8px;
+}
+
+.center-container h2 {
+    font-size: 1rem;
+}
+
+}
 
 
 /* Large devices (desktops, 992px and up) */
