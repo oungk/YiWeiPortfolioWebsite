@@ -65,7 +65,6 @@ p { /* body copy */
 .bio-text-container {
   flex: 2; /* Takes up more space */
   position: relative; /* Allows image to overlap */
-  z-index: 1; /* Ensures text appears on top */
   max-width: 483px; /* Ensures the text container has a maximum width */
   margin-top: -1em;
 }
@@ -98,21 +97,26 @@ No media query for `xs` since this is the default */
   
 } */
 
-@media (max-width: 1000px) {
-header {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
+@media (max-width: 768px) {
+  .bio-img-container {
+    margin-top: 3em;
+  }
+
+  .text-img {
+    left: 0em;
+  }
+
+  .box-container {
+    justify-content: center;
+    max-width: 90%;
+    flex-direction: column; /* Stack items vertically */
+    width: auto; /* Adjust width to fit the screen */
+    gap: 2em; /* Reduce the space between items for a cleaner layout */
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 /*@media (min-width: 768px) {
-  header {
-      /* adjust header image positioning for larger devices if needed */
-      /* you can also change the header image for mobile here */
-      /* background-position: 50% 50%; 
-  } 
 }
 */
 
