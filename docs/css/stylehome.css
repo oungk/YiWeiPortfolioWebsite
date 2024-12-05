@@ -55,6 +55,7 @@ p { /* body copy */
 h9 { /* nav */
   color: #FFF975;
   text-align: center;
+  font-size: 16px;
 }
 
 a:link,
@@ -123,67 +124,70 @@ No media query for `xs` since this is the default */
     
 } */
 
-@media (max-width: 600px) {
-  main {
-    display: flex;
-    flex-direction: column;
+@media (max-width: 768px) {
+
+  .box-container {
+    display: block;
     align-items: center;
     justify-content: center;
-    max-width: 483px; /* Ensures the text container has a maximum width */
-}
-
-.box-container {
-  display: flex;
-  flex-direction: column;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 483px; /* Ensures the text container has a maximum width */
-}
-
-.text-img-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.home-left-container {
-  margin-top: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 483px; /* Ensures the text container has a maximum width */
-}
-
-.home-text-container {
-  display: flex;
-  flex-direction: column;
-  margin-top: 100px;
-  max-width: 483px; /* Ensures the text container has a maximum width */
-  justify-content: center;
-  text-align: center;
-  line-height: 3.5; /* Adjust this value to increase or decrease line spacing */
-}
-
-.text-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-}
-
-
-
-/* Medium devices (tablets, 768px and up) */
-/*@media (min-width: 768px) {
-    header {
-        /* adjust header image positioning for larger devices if needed */
-        /* you can also change the header image for mobile here */
-        /* background-position: 50% 50%; 
-    } 
+    position: sticky;
+    max-width: 750px;
+    right: 0em;
   }
-*/
 
+  .home-left-container {
+    margin-top: 0em;
+    max-width: 750px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4em;
+  }
+
+  .home-img-container {
+    max-width: 250px; 
+    max-height: 318px; 
+    overflow: hidden; /* Hides the parts of the image that overflow the container */
+    margin-top: 0px;
+  }
+  
+  /* Text image for overlap effect */
+  .text-img {
+    position: relative; /* Allows image to overlap */
+    height: auto; /* Ensures proportional scaling */
+    width: 12em; /* Fills container width */
+    object-fit: cover; /* Crops the image to fit */
+    transform: rotate(-10.58deg) scale(1.1);
+  }
+  
+  .text {
+    margin-top: -70px; /* Adjust to control overlap */
+    position: relative; /* Allows image to overlap */
+    max-width: 250px; /* Ensure the text container has a minimum width */
+  }
+
+  .home-img {
+    height: auto; /* Ensures the image scales proportionally */
+    width: 100%;
+    object-fit: cover; /* Crops the image to fill the container while maintaining its aspect ratio */
+  }
+
+  .text-img-container, .home-text-container {
+    display: block; /* Stack elements vertically */
+    text-align: center; /* Center text content */
+    margin: 0 0; /* Center the container itself */
+    max-width: 750px;
+}
+
+  .home-text-container > * {
+    margin: 5px auto; /* Optional: Add space between child items */
+  }
+    
+  footer .container {
+    max-width: 300px; /* Optional: Limit the container width */
+    margin-bottom: 2px;
+  }
+
+}
 
 /* Large devices (desktops, 992px and up) */
 /*@media (min-width: 992px) {
