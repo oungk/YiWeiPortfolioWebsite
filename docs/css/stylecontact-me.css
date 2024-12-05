@@ -181,27 +181,9 @@ No media query for `xs` since this is the default */
 
 @media (max-width: 768px) {
 
-  .form-container {
+  .container {
     width: 90%;
 }
-
-.image-text-container img {
-    max-width: 90%;
-}
-
-.field label {
-    font-size: 0.9rem;
-}
-
-.field input {
-    font-size: 0.9rem;
-    padding: 8px;
-}
-
-.center-container h2 {
-    font-size: 1rem;
-}
-
 }
 
 
