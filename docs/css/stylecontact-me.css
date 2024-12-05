@@ -182,6 +182,7 @@ No media query for `xs` since this is the default */
 @media (max-width: 768px) {
   .container {
     width: 90%;
+    justify-content: center;
 }
 }
 

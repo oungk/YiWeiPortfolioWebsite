@@ -98,13 +98,15 @@ No media query for `xs` since this is the default */
 } */
 
 @media (max-width: 768px) {
+  
   .box-container {
-    justify-content: center;
     max-width: 90%;
     flex-direction: column; /* Stack items vertically */
     width: auto; /* Adjust width to fit the screen */
     gap: 2em; /* Reduce the space between items for a cleaner layout */
+    align-items: center;
   }
+  
 
   .bio-img-container {
     margin-top: 3em;
